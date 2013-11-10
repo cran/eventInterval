@@ -1,0 +1,8 @@
+# created 28/5/2013 - Jim Lemon
+export(
+EIglm,
+EIdist,
+EIplot,
+get_intervals,
+rescale
+)

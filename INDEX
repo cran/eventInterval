@@ -1,0 +1,5 @@
+EIglm		Perform a GLM with intervals as response variable
+EIdensity	Plot the empirical and theoretical densities of intervals
+EIplot		Plot the intervals against the occurrence of the events
+get_intervals	Calculate the intervals between event times
+rescale		scale numeric values into a new range
