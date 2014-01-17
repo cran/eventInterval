@@ -1,3 +1,7 @@
+version 1.0-1
+
+	fixed the format for reading in dates for Florida hurricanes
+
 version 1.0
 
 	initial build

@@ -1,4 +1,7 @@
 # created 28/5/2013 - Jim Lemon
+import(
+MASS
+)
 export(
 EIglm,
 EIdist,

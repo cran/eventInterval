@@ -29,15 +29,17 @@
  \dontrun{
   # won't pass check due to the call to fitdistr
   data(florida_hurr20)
+  oldloc<-Sys.setlocale("LC_TIME", "C")
   fh_dates<-
    as.Date(paste(florida_hurr20$day,florida_hurr20$month,
-   florida_hurr20$year,sep="-"),"\%d-\%b-\%Y")
+   florida_hurr20$year,sep="-"),"\%d-\%B-\%Y")
   fh_days<-as.numeric(fh_dates)
   fh_ints<-diff(fh_days)
   fh_counts<-tabulate(florida_hurr20$year[-1]-1899,nbins=100)
   require(MASS)
   EIdist(fh_days,main="Empirical distribution of hurricanes",
    xlab="Intervals in days",ylab="Frequencies")
+  Sys.setlocale("LC_TIME", oldloc)
  }
 }
 \keyword{misc}

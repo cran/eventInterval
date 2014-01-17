@@ -55,5 +55,8 @@ The time intervals between industrial accidents.
 Biometrika, 39(1/2): 168-180.
 
 Whitworth, W.A. (1901) Choice and chance. (3rd ed.) Cambridge: Deighton Bell.
+
+Lemon, J. (in press) The analysis of event rates using intervals. Quantitative
+Methods in Psychology.
 }
 \keyword{ package }
