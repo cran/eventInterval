@@ -25,9 +25,9 @@
 
  \samp{EIglm} only tests the effects of the variables specified and does not
  test interactions. If a more complex model is to be tested, the user must
- directly call \samp{glm} and compose a formula for the model. Note that
- because there is no \samp{data} argument, each term in the model must be
- specified explicitly.
+ directly call \samp{glm} and compose a formula for the model (see the last 
+ example). Note that because there is no \samp{data} argument in EIglm, 
+ each term in the model must be specified explicitly.
 }
 \value{An object of class \samp{glm}.}
 \author{Jim Lemon}
@@ -68,5 +68,22 @@
   EIglm(fh_days,list(ft=ftemp_years[-1]))
   Sys.setlocale("LC_TIME", oldloc)
  }
+ # manually performing an event interval GLM
+ # get the Florida hurricane data
+ data(florida_hurr20)
+ # create date values for the events
+ florida_hurr20$date<-
+  as.Date(paste(florida_hurr20$day,florida_hurr20$month,
+  florida_hurr20$year,sep="-"),"\%d-\%B-\%Y")
+ # convert the dates to numeric values (offsets from 1/1/1970)
+ florida_hurr20$days<-as.numeric(florida_hurr20$date)
+ # calculate the intervals, adding NA for the first unknown value
+ florida_hurr20$ints<-c(NA,diff(florida_hurr20$days))
+ # first test the default model in EIglm, dropping the first event
+ summary(glm(ints~days,florida_hurr20[-1,],family="Gamma"))
+ # test a model predicting intervals with times of occurrence,
+ # the intensities of the hurricanes and their interaction,
+ # again dropping the first event
+ summary(glm(ints~days*category,florida_hurr20[-1,],family="Gamma"))
 }
 \keyword{misc}

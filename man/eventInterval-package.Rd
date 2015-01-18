@@ -54,9 +54,10 @@ Maguire, B.A., Pearson, E.S. & Wynn, A.H.A. (1952)
 The time intervals between industrial accidents.
 Biometrika, 39(1/2): 168-180.
 
-Whitworth, W.A. (1901) Choice and chance. (3rd ed.) Cambridge: Deighton Bell.
+Whitworth, W.A. (1901) Choice and chance. (3rd ed.) Cambridge: 
+Deighton Bell.
 
-Lemon, J. (in press) The analysis of event rates using intervals. Quantitative
-Methods in Psychology.
+Lemon, J. (2014) The analysis of event rates using intervals. 
+ The Quantitative Methods for Psychology, 10 (1), 68-76. 
 }
 \keyword{ package }

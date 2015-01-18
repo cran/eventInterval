@@ -1,13 +1,13 @@
 Package: eventInterval
-Version: 1.0-1
-Title: Sequential event interval analysis
-Date: 2014-01-17
-Author: Jim Lemon <jim@bitwrit.com.au>,
-Maintainer: Jim Lemon <jim@bitwrit.com.au>
+Version: 1.2
+Title: Sequential Event Interval Analysis
+Date: 2015-01-18
+Author: Jim Lemon <drjimlemon@gmail.com>,
+Maintainer: Jim Lemon <drjimlemon@gmail.com>
 Imports: MASS
 Description: Functions for analysis of rate changes in sequential events
 License: GPL (>= 2)
-Packaged: 2014-01-17 20:01:51 UTC; root
+Packaged: 2015-01-17 22:52:18 UTC; root
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-01-17 21:53:30
+Date/Publication: 2015-01-21 00:51:42

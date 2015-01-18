@@ -1,3 +1,7 @@
+version 1.1
+
+	added manual GLM example to EIglm help page
+
 version 1.0-1
 
 	fixed the format for reading in dates for Florida hurricanes
