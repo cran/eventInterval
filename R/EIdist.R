@@ -1,3 +1,6 @@
+# calculates the intervals between the times of the events
+# most importantly, applies a correction for multiple events
+# occurring within the same time increment
 get_intervals<-function(event_times) {
  event_ints<-diff(event_times)
  # check for zero intervals, if so, spread each group out
@@ -20,6 +23,9 @@ get_intervals<-function(event_times) {
  return(event_ints)
 }
 
+# displays a histogram of the event intervals,
+# a smoothed line of the histogram counts and
+# a curve representing the best fit exponential distribution
 EIdist<-function(event_times,nbreaks=10,main="",xlab="",ylab="",
  xaxticks=NA,xaxlabs=NA) {
 
